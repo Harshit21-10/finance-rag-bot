@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 public class IngestionService implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(IngestionService.class);
     private final VectorStore vectorStore;
+
     @Value("classpath:/docs/article_thebeatoct2024.pdf")
     private Resource marketPDF;
 
@@ -27,7 +28,6 @@ public class IngestionService implements CommandLineRunner {
         var pdfReader = new ParagraphPdfDocumentReader(marketPDF);
         TextSplitter textSplitter = new TokenTextSplitter();
         vectorStore.accept(textSplitter.apply(pdfReader.get()));
-        log.info("Vector store filled with data");
+        log.info("VectorStore Loaded with data!");
     }
-
 }
