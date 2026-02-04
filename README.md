@@ -10,6 +10,7 @@ A secure, local-first **Retrieval-Augmented Generation (RAG)** chatbot designed 
 * **RAG Architecture:** Vector search using **PostgreSQL (pgvector)** to retrieve relevant context from financial PDFs.
 * **Streaming Responses:** Real-time text generation (Server-Sent Events) for a ChatGPT-like experience.
 * **Modern UI:** A clean, dark-mode interface built with **React**, **Tailwind CSS**, and **Lucide Icons**.
+* ![App Screenshot](screenshot.png)
 
 ## 🏗️ Tech Stack
 
