@@ -46,7 +46,7 @@ ollama pull llama3.1:8b
 ollama pull nomic-embed-text
 ```
 
-###2. Configure Database (PostgreSQL)
+## 2. Configure Database (PostgreSQL)
 Ensure you have a PostgreSQL database running. You can run one via Docker:
 
 ```Bash
@@ -54,12 +54,12 @@ docker run -d --name postgres-vector -e POSTGRES_PASSWORD=root -p 5432:5432 -d a
 Or manually create a database named market and enable the extension:
 ```
 
-###SQL
+## SQL
 ```
 CREATE DATABASE market;
 CREATE EXTENSION vector;
 ```
-###3. Backend Setup (Spring Boot)
+## 3. Backend Setup (Spring Boot)
 Navigate to the backend folder:
 
 ```Bash
@@ -72,7 +72,7 @@ Run the application:
 ```Bash
 ./mvnw spring-boot:run
 ```
-###4. Frontend Setup (React)
+## 4. Frontend Setup (React)
 Navigate to the frontend folder:
 
 ```Bash
@@ -98,7 +98,7 @@ The bot will retrieve the relevant context from the vector store and stream the 
 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 
